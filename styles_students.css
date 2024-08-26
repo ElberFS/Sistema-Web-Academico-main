@@ -1,0 +1,232 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Estilo para el contenedor de estudiantes */
+.students-container {
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo para el encabezado de estudiantes */
+.students-header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.students-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* Botón para registrar nuevo estudiante */
+.register-btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #f1c40f;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-btn:hover {
+    background-color: #c9a30c;
+    transform: scale(1.05);
+}
+
+/* Estilo para el formulario de registro */
+.register-form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form label {
+    margin: 8px 0 4px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.register-form input, .register-form select {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Estilo para la tabla de estudiantes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #e84c3d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+table tr:hover {
+    background-color: #bdc3c7;
+}
+
+/* Estilo para los botones de editar y eliminar */
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+.edit-btn:hover {
+    background-color: #e67e22;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para los encabezados h2 */
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f1c40f; /* Línea decorativa */
+    padding-bottom: 5px;
+}
+
+/* Estilo para las filas y grupos del formulario */
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center; /* Alinear verticalmente */
+}
+
+/* Ajustar DNI y Contraseña en una fila */
+.dni-password-row {
+    flex-wrap: wrap; /* Permitir el ajuste si es necesario */
+}
+
+.dni-password-row .form-group {
+    flex: 1;
+}
+
+/* Estilo para el botón de selección de archivo */
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.file-upload label {
+    margin: 0;
+}
+
+/* Ajustar el botón de selección de archivo a la derecha del input */
+.file-upload input[type="file"] {
+    flex-grow: 1;
+}
+
+/* Estilo para los botones al final del formulario */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-btn, .close-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px; /* Asegurar que ambos botones tengan el mismo tamaño */
+}
+
+.submit-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #c0392b;
+}
+
+.close-btn {
+    background-color: #888;
+    color: white;
+}
+
+.close-btn:hover {
+    background-color: #bebebe;
+}
+
+/* Estilos para los combobox de distrito, provincia y departamento */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.register-form input[type="text"], 
+.register-form input[type="password"] {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+}

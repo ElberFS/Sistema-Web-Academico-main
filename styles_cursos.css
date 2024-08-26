@@ -1,0 +1,237 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+.course-container {
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.course-header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #e84c3d;
+    color: #ffffff;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #bdc3c7;
+}
+.btn-add-course {
+    padding: 12px 20px;
+    border: none;
+    background-color: #f1c40f;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-add-course:hover {
+    background-color: #c9a30c;
+    transform: scale(1.05);
+}
+
+/* Estilos generales para el formulario */
+.form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite ajustar la altura del área de texto */
+}
+
+.btn-submit {
+    background-color: #e74c3c;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: #888;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #c0392b; /* Color más oscuro para el efecto hover */
+}
+
+.btn-cancel {
+    /* Estilos para el botón de cerrar */
+    border-radius: 5px;
+    border: #888;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.btn-cancel:hover {
+    background-color: #bebebe;
+}
+
+/* Estilos generales para los botones */
+.btn-view-list {
+    background-color:  #e74c3c;
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 14px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-view-list:hover {
+    background-color:  #c0392b;
+    transform: scale(1.05); 
+}
+
+.btn-view-list:active {
+    background-color: #e74c3c; 
+    transform: scale(0.95); 
+}
+
+/* Estilos para el modal */
+.modal {
+    /* Estilos para el modal */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    /* Estilos para el contenido del modal */
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modal-content table, .modal-content th, .modal-content td {
+    border: 1px solid #ddd;
+}
+
+.modal-content th, .modal-content td {
+    padding: 8px;
+    text-align: left;
+}
+
+.modal-content th {
+    background-color: #e74c3c;
+}
+
+.btn-close {
+    /* Estilos para el botón de cerrar */
+    background-color: #e74c3c;
+    color:white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    background-color: #c0392b;
+}
+
+/* Nueva clase para posicionar el botón a la derecha */
+.modal-footer {
+    bottom: 20px;
+    right: 20px;
+    width: calc(100% - 40px);
+    text-align: right;
+}

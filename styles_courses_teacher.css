@@ -1,0 +1,330 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main {
+    padding: 20px;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.courses-header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.course-card p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.view-details {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #e84c3d;
+    text-decoration: none;
+    border: 1px solid #e84c3d;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.view-details:hover {
+    background-color: #d43f2e;
+    color: #fff;
+}
+
+/*Estilos para card de detalle del curso*/
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card-content p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/*Estilos para los botones de los cards*/
+.btn-view {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #e84c3d;
+    text-decoration: none;
+    border: 1px solid #e84c3d;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-view:hover {
+    background-color: #d43f2e;
+    color: #fff;
+}
+
+
+/*Estilos para las tablas*/
+.grades-table {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grades-table h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #e84c3d;
+    color: white;
+}
+
+/* Botón para añadir nueva evaluación */
+.btn-add {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #c9a30c;
+}
+
+/* Botón para ver lista en la tabla de calificaciones */
+.btn-view-list {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: #e84c3d;
+    background-color: #f8f9fa;
+    border: 1px solid #e84c3d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.btn-view-list:hover {
+    background-color: #d43f2e;
+    color: #d43f2e;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultado por defecto */
+    position: fixed;
+    z-index: 1; /* Asegúrate de que el modal esté por encima de otros contenidos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Habilita el desplazamiento si el contenido es demasiado largo */
+    background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrado verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo del modal */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra del modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin: 20px 0; /* Espacio alrededor del contenido del modal */
+}
+
+.modal-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modal-body table, th, td {
+    border: 1px solid #ddd;
+}
+
+.modal-body th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+.modal-body th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.btn-save {
+    background-color: #e74c3c;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-save:hover {
+    background-color: #d43f2e;
+}
+.form-container {
+    text-align: right;
+}
+
+/* Estilos para el formulario de añadir nueva evaluación */
+.form-eval-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.form-eval-container h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-eval-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-eval-container input[type="text"],
+.form-eval-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-eval-container input[type="text"]:focus,
+.form-eval-container select:focus {
+    border-color: #e84c3d;
+    outline: none;
+}
+
+.form-eval-container button {
+    background-color: #e84c3d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-eval-container button:hover {
+    background-color: #d43f2e;
+}

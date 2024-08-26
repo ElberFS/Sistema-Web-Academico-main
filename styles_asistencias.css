@@ -1,0 +1,243 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 20px;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+input[type="date"], select {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #e84c3d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #bdc3c7;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Estilos generales para el formulario */
+.form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite ajustar la altura del área de texto */
+}
+
+.btn-submit {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: #888;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #c0392b; /* Color más oscuro para el efecto hover */
+}
+
+.btn-cancel {
+    /* Estilos para el botón de cerrar */
+    border-radius: 5px;
+    border: #888;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background-color: #bebebe;
+}
+
+/* Estilos generales para los botones */
+.btn-view-list {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-view-list:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.btn-view-list:active {
+    background-color: #e74c3c;
+    transform: scale(0.95);
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px; 
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.view-attendance-btn {
+    background-color:  #e74c3c;
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 14px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-attendance-btn:hover {
+    background-color:  #c0392b;
+    transform: scale(1.05); 
+}
+
+.view-attendance-btn:active {
+    background-color: #e74c3c; 
+    transform: scale(0.95); 
+}

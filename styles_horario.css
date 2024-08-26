@@ -1,0 +1,218 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Estilo para el contenedor principal del horario */
+.schedule-container {
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.schedule-header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.schedule-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* Estilo para el encabezado del horario */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo para el título del encabezado */
+.header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* Estilo para la selección del año escolar y la información del grado y sección */
+.year-select, .student-info {
+    display: flex;
+    align-items: center;
+}
+
+.year-select label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.student-info {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.student-info span {
+    margin-right: 15px;
+}
+
+/* Botón para agregar nuevo horario */
+button#agregar-btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #f1c40f;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+button#agregar-btn:hover {
+    background-color: #c9a30c;
+    transform: scale(1.05);
+}
+
+
+/* Botón para imprimir horario */
+.print-button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #f1c40f;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.print-button:hover {
+    background-color: #c9a30c;
+    transform: scale(1.05);
+}
+
+/* Estilo para la tabla de horarios */
+.schedule {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Estilo para el fondo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #e84c3d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+table tr:hover {
+    background-color: #bdc3c7;
+}
+
+/* Estilo para los botones de editar y eliminar */
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+.edit-btn:hover {
+    background-color: #e67e22;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Estilo para el formulario de horario */
+#formulario-horario {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#formulario-horario form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-horario label {
+    margin: 8px 0 4px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#formulario-horario select, #formulario-horario input {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#formulario-horario button {
+    padding: 12px;
+    border: none;
+    background-color: #f1c40f;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#formulario-horario button:hover {
+    background-color: #c9a30c;
+    transform: scale(1.02);
+}
+
+/* Estilo para la fila de recreo */
+.recreo {
+    background-color: #ffff99; /* Un amarillo más intenso */
+    font-weight: bold; /* Opcional: para que el texto resalte más */
+}
