@@ -29,5 +29,5 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/usuario/Sistema-Web-Academico.git
+   git clone https://github.com/ElberFS/Sistema-Web-Academico-main.git
    cd Sistema-Web-Academico
